@@ -13,7 +13,7 @@ namespace LMS.Repo
         {
             base.OnModelCreating(modelBuilder);
             new CompanyMap(modelBuilder.Entity<Company>());
-            new NamedCallerMap(modelBuilder.Entity<NamedCaller>());
+            //new NamedCallerMap(modelBuilder.Entity<NamedCaller>());
 
         }
     }

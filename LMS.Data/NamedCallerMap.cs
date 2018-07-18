@@ -12,7 +12,7 @@ namespace LMS.Data
             entityTypeBuilder.HasKey(e => e.Id);
             entityTypeBuilder.Property(e => e.AddedDate);
             entityTypeBuilder.Property(e => e.Companies);
-            entityTypeBuilder.HasOne(e => e.Companies).WithOne(n => n.NamedCallers).HasForeignKey<Company>(x => x.Id);
+            //entityTypeBuilder.HasOne(e => e.Companies).WithOne(n => n.NamedCallers).HasForeignKey<Company>(x => x.Id);
             entityTypeBuilder.Property(e => e.CompanyID).IsRequired();
             entityTypeBuilder.Property(e => e.Email).IsRequired();
             entityTypeBuilder.Property(e => e.FirstNameAR);

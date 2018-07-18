@@ -10,12 +10,12 @@ namespace LMS.Service
     {
 
         private IRepository<Company> companyRepository;
-        private IRepository<NamedCaller> namedcallerRepository;
+        //private IRepository<NamedCaller> namedcallerRepository;
 
-        public CompanyService(IRepository<Company> companyRepository, IRepository<NamedCaller> namedcallerRepository)
+        public CompanyService(IRepository<Company> companyRepository)
         {
             this.companyRepository = companyRepository;
-            this.namedcallerRepository = namedcallerRepository;
+//            this.namedcallerRepository = namedcallerRepository;
         }
 
         public void DeleteCompany(long id)

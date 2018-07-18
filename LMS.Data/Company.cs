@@ -24,6 +24,6 @@ namespace LMS.Data
         public DateTime? RegistrationDate { get; set; }
         public bool? IsActive { get; set; }
         public bool? IsDeleted { get; set; }
-        public virtual NamedCaller NamedCallers { get; set; }
+        //public virtual NamedCaller NamedCallers { get; set; }
     }
 }
